@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+<header class="header">
+    <a href="#"><img src="img/logo.png" alt=""></a>
+    <ul class="nav">
+        <li class="nav-link"><a class="nav-item" href="#">Destination</a></li>
+        <li class="nav-link"><a class="nav-item" href="#">Offer</a></li>
+        <li class="nav-link"><a class="nav-item" href="#">Tour</a></li>
+        <li class="nav-link"><a class="nav-item" href="#">Blog</a></li>
+        <img class="user" src="img/user.svg" alt="">
+        <li class="nav-account"><a class="nav-item" href="#">My account</a></li>
+        <span></span>
+        <a href="#"><img class="loop" src="img/serch.svg" alt=""></a>
+    </ul>
+</header>
+<section class="sec-1">
+    <div class="container">
+        <h1 class="lozung">It’s Time To<br>
+            Explore The World</h1>
+        <a class="paln-ur-trip" href="#">Plan Your Trip</a>
+        <div class="discover">
+            <div class="select-1">
+                <p>Destinations</p>
+                <select class="Destinations">
+                    <option class="option">Arab Egypt</option>
+                </select>
+            </div>
+            <div class="select-2">
+                <p>Cheak in</p>
+                <input class="Cheack-in" type="date">
+            </div>
+            <div class="select-3">
+                <p>Price Range</p>
+                <select class="price-range">
+                    <option class="option">$500 - $10,0000</option>
+                </select>
+            </div>
+            <a class="discover-now" href="#">Discover Now</a>
+        </div>
+        <div class="sliders">
+            <a onclick="plus()" href="#" class="prev"><img src="img/prev.svg" alt=""></a>
+            <a onclick="minus()" href="#" class="next"><img src="img/next.svg" alt=""></a>
+            <span></span>
+            <h1 id="counter" class="count">01</h1>
+        </div>
+    </div>
+</section>
+<section class="how-it-works">
+    <div class="container">
+        <div class="block-1">
+            <img src="img/map.png" alt="">
+            <h1>Choose Destination</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+        </div>
+        <div class="block-2">
+            <img src="img/binocular .png" alt="">
+            <h1>Explore The Place</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+        </div>
+        <div class="block-3">
+            <img src="img/backpack .png" alt="">
+            <h1>Start Your Journey</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+        </div>
+        <div class="block-4">
+            <img src="img/ukelele .png" alt="">
+            <h1>Let’s Enjoy</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+        </div>
+    </div>
+</section>
+<section class="sec-2">
+    <div class="container">
+        <h1>Top <span class="destinations">Destinations</span> <br>
+            In The World</h1>
+        <p>It is a long established fact that a reader will be the<br> distracted by the readable content of a page
+            when<br> looking at its layout from it.</p>
+        <div class="discover-more"><a href="#">Discover More</a></div>
+        <div class="cities">
+            <div class="cuba">
+                <h1>Cuba City</h1>
+            </div>
+            <div class="paris">
+                <h1>Paris</h1>
+            </div>
+            <div class="japan">
+                <h1>Japan</h1>
+            </div>
+        </div>
+        <span class="bg"></span>
+    </div>
+</section>
+<section class="sec-3">
+    <div class="container">
+        <img src="img/photo.jpg" alt="">
+        <div class="about">
+            <h1>We Offering In Total 793<br>
+                Tours Out The World</h1>
+            <div class="about-card">
+                <main>
+                    <img class="about-img1" src="img/user2.png" alt="">
+                    <toggle-section open="true">
+                        <h2 id="section-1">Best Travel Guide Always For Your Services</h2>
+                        <p>Travel has helped us to understandsa the meaning of life and it has helped us<br>
+                            become better people. Each time we travel, we see the world with new eyes.<br>
+                            Travel has helped us to understand the meaning of life</p>
+                    </toggle-section>
+                    <img class="about-img2" src="img/earth.png" alt="">
+                    <toggle-section open="false">
+                        <h2 id="section-2">World Class Services Provide For You</h2>
+                        <p>Travel has helped us to understandsa the meaning of life and it has helped us<br>
+                            become better people. Each time we travel, we see the world with new eyes.<br>
+                            Travel has helped us to understand the meaning of life</p>
+                    </toggle-section>
+                    <img class="about-img3" src="img/headphone.png" alt="">
+                    <toggle-section open="false">
+                        <h2 id="section-3">24/7 Strong Customer Support</h2>
+                        <p>Travel has helped us to understandsa the meaning of life and it has helped us<br>
+                            become better people. Each time we travel, we see the world with new eyes.<br>
+                            Travel has helped us to understand the meaning of life</p>
+                    </toggle-section>
+                </main>
+            </div>
+        </div>
+</section>
+<section class="sec-4">
+    <div class="container">
+        <h1>Choose Your Destination</h1>
+        <div class="places">
+            <div class="place-1">
+                <div class="info">
+                    <h1>Santorini, Oia Greece</h1>
+                    <p class="price">$2000</p>
+                    <img src="img/stars.png" alt="">
+                    <p class="reviews">5k Reviews</p>
+                    <a class="add" href="#">+</a>
+                </div>
+            </div>
+            <div class="place-2">
+                <div class="info">
+                    <h1>Santorini, Oia Greece</h1>
+                    <p class="price">$2000</p>
+                    <img src="img/stars.png" alt="">
+                    <p class="reviews">5k Reviews</p>
+                    <a class="add" href="#">+</a>
+                </div>
+            </div>
+            <div class="place-3">
+                <div class="info">
+                    <h1>Santorini, Oia Greece</h1>
+                    <p class="price">$2000</p>
+                    <img src="img/stars.png" alt="">
+                    <p class="reviews">5k Reviews</p>
+                    <a class="add" href="#">+</a>
+                </div>
+            </div>
+            <a class="view-all-places" href="#">View All Places</a>
+        </div>
+    </div>
+</section>
+<section class="sec-5">
+    <div class="container">
+        <img class="img8" src="img/image 8.png" alt="">
+        <img class="img7" src="img/image 7.png" alt="">
+        <img class="img6" src="img/image 6.png" alt="">
+        <img class="img5" src="img/image 5.png" alt="">
+        <img class="img4" src="img/image 4.png" alt="">
+        <img class="img3" src="img/image 3.png" alt="">
+        <img class="img2" src="img/image 2.png" alt="">
+        <img class="img1" src="img/image 01.png" alt="">
+        <h1>What Our Happy Customers<br>
+            Say About Us</h1>
+        <div class="slide-show">
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1" class="carousel__slide">
+                        <div class="carousel__snapper">
+                            <div class="human-info">
+                                <img src="img/human.png" alt="">
+                                <h1>Md Shamim Hossain</h1>
+                                <p>UI/UX Designer</p>
+                            </div>
+                            <p>Jetrips Hotel is an excellent choice for anybody for<br>
+                                considering hosting their events there. Top levela<br>
+                                facilities and excellent staff make for a brilliantad<br>
+                                environment within which to operate. The hotel is<br>
+                                meticulous in its planning.</p>
+                        </div>
+                    </li>
+                    <li id="carousel__slide2" class="carousel__slide">
+                        <div class="carousel__snapper">
+                            <div class="human-info">
+                                <img src="img/human.png" alt="">
+                                <h1>Md Shamim Hossain</h1>
+                                <p>UI/UX Designer</p>
+                            </div>
+                            <p>Jetrips Hotel is an excellent choice for anybody for<br>
+                                considering hosting their events there. Top levela<br>
+                                facilities and excellent staff make for a brilliantad<br>
+                                environment within which to operate. The hotel is<br>
+                                meticulous in its planning.</p>
+                        </div>
+                    </li>
+                    <li id="carousel__slide3" class="carousel__slide">
+                        <div class="carousel__snapper">
+                            <div class="human-info">
+                                <img src="img/human.png" alt="">
+                                <h1>Md Shamim Hossain</h1>
+                                <p>UI/UX Designer</p>
+                            </div>
+                            <p>Jetrips Hotel is an excellent choice for anybody for<br>
+                                considering hosting their events there. Top levela<br>
+                                facilities and excellent staff make for a brilliantad<br>
+                                environment within which to operate. The hotel is<br>
+                                meticulous in its planning.</p>
+                        </div>
+                    </li>
+                    <li id="carousel__slide4" class="carousel__slide">
+                        <div class="carousel__snapper">
+                            <div class="human-info">
+                                <img src="img/human.png" alt="">
+                                <h1>Md Shamim Hossain</h1>
+                                <p>UI/UX Designer</p>
+                            </div>
+                            <p>Jetrips Hotel is an excellent choice for anybody for<br>
+                                considering hosting their events there. Top levela<br>
+                                facilities and excellent staff make for a brilliantad<br>
+                                environment within which to operate. The hotel is<br>
+                                meticulous in its planning.</p>
+                        </div>
+                    </li>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a id="btn1" onclick="bt1()" href="#carousel__slide1" class="carousel__navigation-button">Go
+                                to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a id="btn2" onclick="bt2()" href="#carousel__slide2" class="carousel__navigation-button">Go
+                                to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a id="btn3" onclick="bt3()" href="#carousel__slide3" class="carousel__navigation-button">Go
+                                to slide 3</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a id="btn4" onclick="bt4()" href="#carousel__slide4" class="carousel__navigation-button">Go
+                                to slide 4</a>
+                        </li>
+                    </ol>
+                </aside>
+            </section>
+        </div>
+    </div>
+</section>
+<section class="sec-6">
+    <div class="container">
+        <h1>Download Now Travel<br>
+            Community Apps</h1>
+        <a href="#"><img class="google-play" src="img/google play.png" alt=""></a>
+        <a href="#"><img class="apple-store" src="img/apple store.png" alt=""></a>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+            <p class="you-can-dream">You can dream, create, design, and buildsa the most<br>wonderful place.</p>
+            <img class="ico" src="img/phone.png" alt="">
+            <p class="information">+0123 456 987, +0123 456 987</p>
+            <img class="ico" src="img/message.png" alt="">
+            <p class="information">yourmailaddress@gmail.com</p>
+            <img class="ico" src="img/geo.png" alt="">
+            <p class="information">www.yourwebsitename.com</p>
+        </div>
+        <div class="Quick-Links">
+            <h1>Quick Links</h1>
+            <a href="#">
+                <p>- About Us</p>
+            </a>
+            <a href="#">
+                <p>- Destinations </p>
+            </a>
+            <a href="#">
+                <p>- Latest Blog</p>
+            </a>
+            <a href="#">
+                <p>- Our Team</p>
+            </a>
+            <a href="#">
+                <p>- Contact Us</p>
+            </a>
+        </div>
+        <div class="Support">
+            <h1>Support</h1>
+            <a href="#">
+                <p>- Customer Support</p>
+            </a>
+            <a href="#">
+                <p>- Privacy & Policy Terms</p>
+            </a>
+            <a href="#">
+                <p>- Terms & Condition Forum</p>
+            </a>
+            <a href="#">
+                <p>- Forum</p>
+            </a>
+            <a href="#">
+                <p>- Tour Guid</p>
+            </a>
+        </div>
+        <div class="Newsletter">
+            <h1>Newsletter</h1>
+            <input type="text">
+            <a href="#">Subscribe Now</a>
+        </div>
+    </div>
+</footer>
+
+<body>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
